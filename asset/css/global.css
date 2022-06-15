@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    /* font-weight: 400; */
+}
+.font-1{
+font-family: 'Times New Roman', Times, serif;
+}
+.dropdown{
+    transition: 0.5s all;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    border: none;
+}
+.bg-1{
+    background-color: #1d3548;
+}
+.f-s1{
+    font-size: 18px;
+}
+.f-s2{
+    font-size: 14px;
+}
+.f-s3{
+    font-size: 11px;
+}
+.text-1{
+    color: #6BD0FF;
+}
+.text-2{
+    color: #101010;
+}
+.text-3
+{
+    color: #1d3548;
+}
+.text-4{
+    color: #eee;
+}
+.ls-1{
+    letter-spacing: 2px;
+}
+.btn-1{
+    background-color: #1d3548;
+    color: #eee;
+}
