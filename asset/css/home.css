@@ -171,6 +171,27 @@ header .contact-details .container .row .social div a i:hover {
     border-radius: 5px;
   }
   
+/* Gallery */
+
+section.gallery .container .item .list {
+  margin: 10px 0;
+}
+
+section.gallery .container .item .list img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+     transition: 0.5s;
+}
+
+section.gallery .container .item .list img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 15px lightgrey;
+          box-shadow: 2px 2px 15px lightgrey;
+}
 
   /* Contact Us */
 section.contact .icon{
