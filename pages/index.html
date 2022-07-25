@@ -192,7 +192,45 @@
       </button>
     </div>
   </div>
-
+  <style>
+    .about{
+      position: relative;
+    }
+    .notice-board{
+        position: absolute;
+        top: 30px;
+        width: 350px;
+        /* border: 1px solid #1d3548; */
+        box-shadow: 1px 1px 10px gray;
+        border-radius: 10px;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .notice-board .notice-title{
+        background-color: #1d3548;
+        padding: 10px 20px;
+        color: #eee;
+      }
+      .notice-board .list-group-item{
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      .notice-board .list-group-item:hover,
+      .notice-board .list-group-item:hover .notice{
+        background-color: rgb(247, 247, 247);
+        color: darkred;
+      }
+      .notice-board .list-group-item .notice{
+        font-weight: 500;
+      }
+    @media screen and (max-width:768px){
+      .notice-board{
+        position: static;
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
   <!-- Welcome Section -->
   <section class="about py-5">
     <div class="container py-3">
@@ -206,9 +244,33 @@
 
           <a href="#" class="btn btn-1 ">Read More</a>
         </div>
+        <!-- Notice Board -->
         <div class="col-md-4 my-3">
-          <div class="card">
-            <div class="card-body">
+          <div class="notice-board">
+            <div class="notice-title">
+              <h1 class="m-0 fs-5">Notice Board</h1>
+            </div>
+            <div class="notice-list">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="text-decoration-none text-2">
+                    <span class="notice">
+                      Exam Routine.
+                    </span> <br>
+                    <span class="f-s2 text-muted">3 weeks ago</span>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-decoration-none text-2">
+                    <span class="notice">
+                      Exam Routine.
+                    </span> <br>
+                    <span class="f-s2 text-muted">3 weeks ago</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="card-body">
               <h1 class="m-0 fs-4">Notice:</h1>
               <hr class="mt-1">
               <ul class="list-group list-group-flush">
@@ -237,7 +299,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
